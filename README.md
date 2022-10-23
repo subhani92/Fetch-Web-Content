@@ -5,7 +5,7 @@
 - [Table of Contents](#Table-of-Contents)
 
   - [1.0 Problem Statement](#10-Problem-Statement)
-  - [2.0 Approaches/Discussion](#20-Approaches/Discussion)
+  - [2.0 Approaches/Discussion](#20-Approaches-Discussion)
   - [3.0 Testing and running](#30-Testing-and-running)
   - [4.0 Future Design and Thoughts](#40-Future-Design-and-Thoughts)
 
@@ -31,7 +31,7 @@ Modify the script to print this metadata.
 
 For example (it can work differently if you like)
 
-#### [2.0 Approaches/Discussion](#20-Approaches/Discussion)
+#### [2.0 Approaches/Discussion](#20-Approaches-Discussion)
 
 - There are many approaches to this problem
 - For **_section-1_**
@@ -41,6 +41,8 @@ For example (it can work differently if you like)
 - Demo ![Image1](images/fetch-content-demo.png) - main fucntion calls downloadHTML class which args as an argument.
 - Then it will process each URL and save it in the local disk with the filename of the website name + html. 
 - Note that I have used **stream = True** in the GET Method and have used chunk_size in each iter_contens
+- **_Note_** I am assuming user input a valid url format.
+
 - _REASON_ :
   This avoids reading the content all at once into memory for large responses. Especially if we have to deal with large images/video files.
 
